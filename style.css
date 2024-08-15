@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#mincir{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(204, 246, 152);
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+}
+.bound{
+    width: fit-content;
+    overflow: hidden;
+}
+.bound .boundt{
+    transform: translateY(100%);
+}
+#main{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+#hero {
+    position: relative;
+    width: 100;
+    height: 100vh;
+    background-color: black;
+    color: aliceblue;
+}
+#nav {
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: space-between;
+
+    color: aliceblue;
+}
+#nav a{
+    color: rgb(200, 250, 135);
+    font-size: 22px;
+    text-decoration: none;
+}
+
+#heading {
+    margin-top: 100px;
+}
+#heading h1{
+    line-height: 1;
+    opacity: .4;
+    font-size: 7vw;
+    font-size: 7.5vw;
+    font-weight: 900;
+    margin-left: 40px;
+}
+#heading #scnd{
+    margin-left: 152px;
+    
+}
+
+#bt{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: fit-content;
+
+}
+
+#bt h5{
+    text-align: right;
+    font-size: 20px;
+}
+#smlhead{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-right: 40px;
+}
+
+#smlhead h5{
+    text-align: right;
+    margin-top: .4vw;
+    text-align: right;
+    font-size: 1vw;
+}
+
+#herofoot{
+    padding: 0 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+
+}
+#herofoot a{
+    color: rgb(105, 148, 218);
+    text-decoration: none;
+}
+#herofoot #icset{
+    display: flex;
+   gap: 5px;
+}
+
+#herofoot .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: black;
+    background-color: rgb(187, 241, 24);
+}
+#secpg{
+    padding-right: 10vw;
+    padding-top: 200px;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    color: aliceblue;
+}
+#elem{
+    width: 100%;
+    padding: 2vw 3vw;
+    border-top: 1px solid #888;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+
+}
+#elem h1{
+    font-size: 4vw;
+    opacity: .6;
+
+}
+#elemL{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vw 3vw;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    padding-right: 0;
+}
+#elemL h1{
+    font-size: 4vw;
+    opacity: .6;
+}
+#elem img{
+    display: none;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+}
+#elemL img{
+    
+    display: none;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+}
+#about{
+    display: flex;
+    align-items: center;
+    
+    color: chartreuse;
+    padding: 8vw 4vw;
+    padding-left: 40vw;
+    width: 100%;
+    background-color: black;
+}
+#about img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+#about img:hover {
+    box-shadow: 0 0 400px #95c695;
+ }
+ #textabt {
+    width: 25rem;
+    padding: 100px;
+ }
+#textabt h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    opacity: .9;
+    background-color:cornflowerblue;
+    margin-bottom: 10px;
+    color: rgb(38, 8, 83);
+    border: 3px dashed burlywood;
+    border-radius: 100px;
+}
+#textabt p{
+    line-height: 2;
+    margin-bottom: 30px;
+
+}
+#textabt a{
+    padding: 12px 22px;
+    border: 1px dashed rgb(47, 189, 255);
+    border-radius: 100px;
+    color: azure;
+    text-decoration: none;
+    font-size: 13px;
+}
+#sub {
+   background-color: black;
+   padding: 25px 45px;
+}
+#sub a{
+    text-transform: uppercase;
+    opacity: .7;
+    text-decoration: none;
+    color: #e8ffc1;
+    font-size: 25px;
+    margin-top: 12px;
+}
