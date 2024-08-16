@@ -17,6 +17,7 @@ function fpage(){
         y: 0,
         ease: Expo.easeInOut,
         duration:1,
+        delay:-1,
         stagger:.1
     })
     .from("#herofoot",{
@@ -35,3 +36,40 @@ function circleMfolo(){
 }
 circleMfolo();
 fpage();
+
+
+document.querySelectorAll(".elem").forEach(function(elem){
+    var rot =0; var dif=0;
+    elem.addEventListener("mousemove",function(details){
+        gsap.to(elem.querySelector("img"),{
+            opacity: 0,
+            ease: Power3,
+            duration:0.5,
+        });
+    });
+
+
+    elem.addEventListener("mouseleave", function (dets) {
+       
+        gsap.to(elem.querySelector("img"), {
+          opacity: 0,
+          ease: Power3,
+          
+        });
+      });
+
+    elem.addEventListener("mousemove", function (dets) {
+        var diff = dets.clientY - elem.getBoundingClientRect().top;
+        dif = dets.clientX - rot;
+        rot = dets.clientX;
+        gsap.to(elem.querySelector("img"), {
+          opacity: 1,
+          ease: Power3,
+          top: diff,
+          left: dets.clientX,
+          rot: gsap.utils.clamp(-20, 20, dif * 0.5),
+        });
+      });
+
+});
+

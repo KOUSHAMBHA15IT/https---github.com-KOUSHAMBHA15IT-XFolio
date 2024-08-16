@@ -133,7 +133,8 @@ html,body{
     height: 100vh;
     color: aliceblue;
 }
-#elem{
+.elem{
+    position: relative;
     width: 100%;
     padding: 2vw 3vw;
     border-top: 1px solid #888;
@@ -143,12 +144,12 @@ html,body{
     padding-right: 0;
 
 }
-#elem h1{
+.elem h1{
     font-size: 4vw;
     opacity: .6;
 
 }
-#elemL{
+.elemL{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,23 +159,22 @@ html,body{
     border-bottom: 1px solid #888;
     padding-right: 0;
 }
-#elemL h1{
+.elemL h1{
     font-size: 4vw;
     opacity: .6;
 }
-#elem img{
-    display: none;
+.elem img{
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
     height: 100%;
     z-index: 999;
     position: absolute;
 }
-#elemL img{
-    
-    display: none;
-    height: 100%;
-    z-index: 999;
-    position: absolute;
-}
+
 #about{
     display: flex;
     align-items: center;
