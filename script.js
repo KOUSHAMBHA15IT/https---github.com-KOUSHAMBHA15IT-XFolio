@@ -29,6 +29,27 @@ function fpage(){
     })
 }
 
+
+
+function spage(){
+    var tl= gsap.timeline();
+
+    tl.from("#secpg",{
+        y: '-10',
+        opacity: 0,
+        duration:1,
+        ease: Expo.easeInOut
+    })
+    .to("#elem",{
+        y: 0,
+        ease: Expo.easeInOut,
+        duration:1,
+        delay:-1,
+        stagger:.1
+    })
+    
+}
+
 function circleMfolo(){
     window.addEventListener("mousemove",function(dets){
        document.querySelector("#mincir").style.transform=`translate(${dets.clientX}px,${dets.clientY}px)`;
@@ -36,7 +57,7 @@ function circleMfolo(){
 }
 circleMfolo();
 fpage();
-
+spage();
 
 document.querySelectorAll(".elem").forEach(function(elem){
     var rot =0; var dif=0;
