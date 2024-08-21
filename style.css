@@ -1,16 +1,15 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
 
-html, body {
+html,body{
     width: 100%;
     height: 100%;
 }
-
-#mincir {
+#mincir{
     width: 10px;
     height: 10px;
     background-color: rgb(204, 246, 152);
@@ -18,41 +17,37 @@ html, body {
     z-index: 99999;
     border-radius: 50%;
     transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+    
 }
-
-.bound {
+.bound{
     width: fit-content;
     overflow: hidden;
 }
-
-.bound .boundt {
+.bound .boundt{
     transform: translateY(100%);
 }
-
-#main {
+#main{
     width: 100%;
     height: auto;
     background-color: black;
 }
-
 #hero {
     position: relative;
-    width: 100%;
+    width: 100;
     height: 100vh;
     background-color: black;
     color: aliceblue;
 }
-
 #nav {
     width: 100%;
     display: flex;
     padding: 20px 40px;
     align-items: center;
     justify-content: space-between;
+
     color: aliceblue;
 }
-
-#nav a {
+#nav a{
     color: rgb(200, 250, 135);
     font-size: 22px;
     text-decoration: none;
@@ -61,32 +56,32 @@ html, body {
 #heading {
     margin-top: 100px;
 }
-
-#heading h1 {
+#heading h1{
     line-height: 1;
     opacity: .4;
+    font-size: 7vw;
     font-size: 7.5vw;
     font-weight: 900;
     margin-left: 40px;
 }
-
-#heading #scnd {
+#heading #scnd{
     margin-left: 152px;
+    
 }
 
-#bt {
+#bt{
     display: flex;
     flex-direction: column;
     align-items: end;
     width: fit-content;
+
 }
 
-#bt h5 {
+#bt h5{
     text-align: right;
     font-size: 20px;
 }
-
-#smlhead {
+#smlhead{
     display: flex;
     align-items: end;
     flex-direction: column;
@@ -94,13 +89,14 @@ html, body {
     padding-right: 40px;
 }
 
-#smlhead h5 {
+#smlhead h5{
     text-align: right;
     margin-top: .4vw;
+    text-align: right;
     font-size: 1vw;
 }
 
-#herofoot {
+#herofoot{
     padding: 0 1.5vw;
     display: flex;
     align-items: center;
@@ -108,19 +104,18 @@ html, body {
     position: absolute;
     bottom: 3%;
     width: 100%;
-}
 
-#herofoot a {
+}
+#herofoot a{
     color: rgb(105, 148, 218);
     text-decoration: none;
 }
-
-#herofoot #icset {
+#herofoot #icset{
     display: flex;
-    gap: 5px;
+   gap: 5px;
 }
 
-#herofoot .circle {
+#herofoot .circle{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,8 +125,7 @@ html, body {
     color: black;
     background-color: rgb(187, 241, 24);
 }
-
-#secpg {
+#secpg{
     padding-right: 10vw;
     padding-top: 200px;
     background-color: black;
@@ -139,8 +133,7 @@ html, body {
     height: 100vh;
     color: aliceblue;
 }
-
-.elem {
+.elem{
     position: relative;
     width: 100%;
     padding: 2vw 3vw;
@@ -149,14 +142,14 @@ html, body {
     align-items: center;
     justify-content: space-between;
     padding-right: 0;
-}
 
-.elem h1 {
+}
+.elem h1{
     font-size: 4vw;
     opacity: .6;
-}
 
-.elemL {
+}
+.elemL{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -166,65 +159,62 @@ html, body {
     border-bottom: 1px solid #888;
     padding-right: 0;
 }
-
-.elemL h1 {
+.elemL h1{
     font-size: 4vw;
     opacity: .6;
 }
-
-.elem img {
+.elem img{
     opacity: 0;
     pointer-events: none;
     height: 140%;
     z-index: 999;
     position: absolute;
     transform: translate(-50%, -50%);
+    height: 100%;
+    z-index: 999;
+    position: absolute;
 }
 
-#about {
+#about{
     display: flex;
     align-items: center;
+    
     color: chartreuse;
     padding: 8vw 4vw;
     padding-left: 40vw;
     width: 100%;
     background-color: black;
 }
-
-#about img {
+#about img{
     width: 15vw;
     height: 15vw;
     border-radius: 50%;
 }
-
 #about img:hover {
     box-shadow: 0 0 400px #95c695;
-}
-
-#textabt {
+ }
+ #textabt {
     width: 25rem;
     padding: 100px;
-}
-
-#textabt h5 {
+ }
+#textabt h5{
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
     opacity: .9;
-    background-color: cornflowerblue;
+    background-color:cornflowerblue;
     margin-bottom: 10px;
     color: rgb(38, 8, 83);
     border: 3px dashed burlywood;
     border-radius: 100px;
 }
-
-#textabt p {
+#textabt p{
     line-height: 2;
     margin-bottom: 30px;
-}
 
-#textabt a {
+}
+#textabt a{
     padding: 12px 22px;
     border: 1px dashed rgb(47, 189, 255);
     border-radius: 100px;
@@ -232,13 +222,11 @@ html, body {
     text-decoration: none;
     font-size: 13px;
 }
-
 #sub {
-    background-color: black;
-    padding: 25px 45px;
+   background-color: black;
+   padding: 25px 45px;
 }
-
-#sub a {
+#sub a{
     text-transform: uppercase;
     opacity: .7;
     text-decoration: none;
@@ -246,109 +234,56 @@ html, body {
     font-size: 25px;
     margin-top: 12px;
 }
-
-/* Media Queries for Responsiveness */
 @media (max-width: 1080px) {
+    /* Adjust font sizes to maintain readability */
     #nav a {
-        font-size: 18px;
+        font-size: 22px; /* Slightly larger for readability on smaller screens */
     }
-    
+
     #heading h1 {
-        font-size: 12vw;
+        font-size: 8vw; /* Responsive font size */
     }
-    
-    #bt h5 {
-        font-size: 4vw;
-    }
-    
+
     #smlhead h5 {
-        font-size: 2.5vw;
+        font-size: 2.5vw; /* Ensure text remains readable */
     }
-    
+
     #herofoot a {
-        font-size: 3vw;
+        font-size: 16px; /* Adjust link font size */
     }
 
     #herofoot .circle {
-        width: 12px;
-        height: 12px;
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Make sure elements don’t overflow or break the layout */
+    #bt {
+        align-items: center; /* Center align on smaller screens */
     }
 
     #secpg {
-        padding-top: 150px;
-        padding-right: 5vw;
+        padding-right: 5vw; /* Reduce padding for smaller screens */
+        padding-top: 150px; /* Adjust spacing */
     }
 
     .elem h1 {
-        font-size: 8vw;
+        font-size: 6vw; /* Scale heading size */
     }
 
     #about {
-        flex-direction: column;
-        padding-left: 5vw;
-        padding-right: 5vw;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align */
+        padding-left: 0;
     }
 
     #about img {
-        width: 30vw;
-        height: 30vw;
+        width: 25vw; /* Make the image larger for mobile screens */
+        height: 25vw;
     }
 
     #textabt {
-        padding: 30px;
-        width: 100%;
-    }
-
-    #sub a {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 1080px) {
-    #nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
-
-    #heading h1 {
-        font-size: 15vw;
-    }
-
-    #bt h5 {
-        font-size: 5vw;
-    }
-
-    #smlhead {
-        margin-top: 50px;
-        padding-right: 20px;
-    }
-
-    #herofoot {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #secpg {
-        padding-top: 100px;
-        padding-right: 2vw;
-    }
-
-    .elem h1 {
-        font-size: 10vw;
-    }
-
-    #about img {
-        width: 50vw;
-        height: 50vw;
-    }
-
-    #textabt {
-        padding: 20px;
-        width: 100%;
-    }
-
-    #sub a {
-        font-size: 18px;
+        padding: 50px; /* Adjust padding */
+        width: auto; /* Responsive width */
     }
 }
